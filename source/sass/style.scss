@@ -1,0 +1,16 @@
+// variables.less
+
+$text: #444444;
+
+
+// scaffolding.less
+
+body {
+	margin: 0;
+
+	font-size: 14px;
+	line-height: 18px;
+	color: $text;
+
+	background-color: #ffffff;
+}

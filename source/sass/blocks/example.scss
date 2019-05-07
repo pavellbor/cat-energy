@@ -1,0 +1,172 @@
+.example {
+	background-color: #f2f2f2;
+}
+
+.example__wrapper {
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 29px 20px 0;
+}
+
+.example__title {
+	margin: 0;
+	margin-bottom: 36px;
+
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 36px;
+	font-family: $font;
+	color: $color-2;
+}
+
+.example__desc {
+	margin: 0;
+	margin-bottom: 25px;
+	padding-right: 10px;
+}
+
+.example__stats {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	margin-bottom: 37px;
+	padding: 0;
+
+	list-style: none;
+}
+
+.example__value {
+	position: relative;
+
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	box-sizing: border-box;
+	width: 124px;
+	min-height: 56px;
+	padding-top: 12px;
+
+	font-size: 24px;
+	line-height: 24px;
+	font-family: $font;
+	color: $color-2;
+	text-transform: uppercase;
+
+	border: 1px solid #cdcdcd;
+	border-radius: 4px;
+
+	&:first-child {
+		margin-right: 32px;
+	}
+
+	span {
+		position: absolute;
+		bottom: -14px;
+
+		width: 87px;
+		min-height: 20px;
+
+		font-size: 12px;
+		line-height: 12px;
+		font-family: Arial, sans-serif;
+		text-align: center;
+		color: $color-1;
+		text-transform: lowercase;
+
+		background-color: $bg-3;
+	}
+}
+
+.example__costs {
+	margin: 0;
+	margin-bottom: 36px;
+
+	font-size: 14px;
+	line-height: 14px;
+	font-family: $font;
+	text-align: center;
+	color: $color-2;
+	text-transform: uppercase;
+}
+
+
+@media (min-width: $tablet-width) {
+
+	.example {
+		background-color: transparent;
+	}
+
+	.example__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		width: $tablet-width;
+		padding: 0px 30px 80px;
+	}
+
+	.example__title {
+		flex-grow: 1;
+		margin-bottom: 65px;
+
+		font-size: 60px;
+		line-height: 60px;
+	}
+
+	.example__desc {
+		flex-grow: 1;
+		margin-bottom: 53px;
+
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.example__stats {
+		justify-content: flex-start;
+		margin-bottom: 0;
+	}
+
+	.example__value {
+		flex-grow: 0;
+		width: 162px;
+		min-height: 72px;
+		padding-top: 18px;
+
+		font-size: 30px;
+		line-height: 30px;
+
+		&:first-child {
+			margin-right: 42px;
+		}
+
+		span {
+			bottom: -14px;
+			
+			width: auto;
+			padding: 0 8px;
+
+			font-size: 14px;
+			line-height: 14px;
+
+			background-color: $bg-1;
+
+			br {
+				display: none;
+			}
+		}
+	}
+
+	.example__costs {
+		margin: 0;
+
+		font-size: 20px;
+		line-height: 20px;
+		text-align: right;
+
+		span {
+			display: block;
+			padding-top: 10px;
+		}
+	}
+}

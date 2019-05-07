@@ -1,0 +1,23 @@
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 40px;
+
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: inherit;
+
+	border: none;
+}
+
+
+@media (min-width: $tablet-width) {
+
+	.button {
+		min-height: 52px;
+		font-size: 20px;
+		line-height: 20px;
+	}
+}

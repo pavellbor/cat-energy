@@ -1,16 +1,79 @@
 // variables.less
 
-$text: #444444;
+$mobile-width: 320px;
+$mobile-padding: 20px;
+$tablet-width: 768px;
+$tablet-padding: 30px;
+
+$color-1: #444444;
+$color-2: #000000;
+$color-3: #ffffff;
+
+$bg-1: #ffffff;
+$bg-2: #63a73a;
+$bg-3: #f2f2f2;
+
+$font: "Oswald", Arial, sans-serif;
 
 
 // scaffolding.less
 
+@font-face {
+	font-weight: 400;
+	font-family: "Oswald";
+	font-style: normal;
+	src:
+	url(../fonts/Oswald-Regular.woff2) format("woff2"),
+	url(../fonts/Oswald-Regular.woff) format("woff");
+}
+
+@font-face {
+	font-weight: 500;
+	font-family: "Oswald";
+	font-style: normal;
+	src:
+	url(../fonts/Oswald-Medium.woff2) format("woff2"),
+	url(../fonts/Oswald-Medium.woff) format("woff");
+}
+
 body {
+	min-width: $mobile-width;
 	margin: 0;
 
 	font-size: 14px;
 	line-height: 18px;
-	color: $text;
+	font-family: Arial, sans-serif;
+	color: $color-1;
 
-	background-color: #ffffff;
+	background-color: $bg-1;
 }
+
+.visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+@import "blocks/button.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/promo.scss";
+@import "blocks/power-lines.scss";
+@import "blocks/principle.scss";
+@import "blocks/example.scss";
+@import "blocks/effect-slider.scss";
+@import "blocks/contacts.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+
+@import "blocks/page-header.scss";
+@import "blocks/page-footer.scss";

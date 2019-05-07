@@ -1,0 +1,21 @@
+.page-header__wrapper {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+	.page-header {
+		margin-bottom: 60px;
+	}
+
+	.page-header__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 23px $tablet-padding 0;
+	}
+
+	.page-header__logo {
+		margin-right: 92px;
+	}
+}

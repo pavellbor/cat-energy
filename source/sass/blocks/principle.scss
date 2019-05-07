@@ -1,0 +1,156 @@
+.principle {
+	margin-bottom: 42px;
+}
+
+.principle__wrapper {
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 20px;
+}
+
+.principle__title {
+	margin: 0;
+	margin-bottom: 40px;
+
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 36px;
+	font-family: $font;
+	color: $color-2;
+}
+
+.principle__list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.principle__item {
+	position: relative;
+
+	min-height: 60px;
+	margin-bottom: 20px;
+	padding-left: 80px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&::before {
+		content: "";
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 60px;
+		height: 60px;
+
+		background-color: #68b738;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&--useful::before {
+		background-image: url(../img/icon-useful.png);
+		background-size: 26px 29px;
+	}
+
+	&--convenient::before {
+		background-image: url(../img/icon-convenient.png);
+		background-size: 29px 31px;
+	}
+
+	&--easy::before {
+		background-image: url(../img/icon-easy.png);
+		background-size: 23px 30px;
+	}
+
+	&--fast::before {
+		background-image: url(../img/icon-fast.png);
+		background-size: 26px 31px;
+	}
+}
+
+
+@media (min-width: $tablet-width) {
+
+	.principle {
+		margin-bottom: 42px;
+
+		border-bottom: 1px solid #e6e6e6;
+	}
+
+	.principle__wrapper {
+		width: $tablet-width;
+		padding: 0 30px 56px;
+	}
+
+	.principle__title {
+		margin-bottom: 71px;
+
+		font-size: 60px;
+		line-height: 60px;
+	}
+
+	.principle__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.principle__item {
+		box-sizing: border-box;
+		width: 324px;
+		min-height: 230px;
+		margin-bottom: 87px;
+		padding-top: 112px;
+		padding-left: 0;
+		padding-right: 79px;
+
+		font-size: 16px;
+		line-height: 24px;
+
+		&:nth-last-child(2) {
+			margin-bottom: 0px;
+		}
+
+		&:nth-child(odd) {
+			margin-right: 60px;
+		}
+
+		&::before {
+			width: 80px;
+			height: 80px;
+		}
+
+		&::after {
+			position: absolute;
+			top: -40px;
+			left: 115px;
+			z-index: -1;
+
+			font-size: 281px;
+			line-height: 281px;
+			font-family: $font;
+			color: #f2f2f2;
+		}
+
+		&--useful::after {
+			content: "1";
+		}
+
+		&--convenient::after {
+			content: "2";
+		}
+
+		&--easy::after {
+			content: "3";
+		}
+
+		&--fast::after {
+			content: "4";
+		}
+	}
+}

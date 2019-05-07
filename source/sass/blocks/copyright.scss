@@ -1,0 +1,38 @@
+.copyright {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+
+	color: inherit;
+	text-decoration: none;
+
+	svg {
+		fill: #666666;
+	}
+
+	&:hover svg {
+		fill: #68b738;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+}
+
+.copyright__name {
+	font-size: 16px;
+	line-height: 16px;
+}
+
+
+@media (min-width: $tablet-width) {
+
+	.copyright {
+		width: auto;
+	}
+
+	.copyright__name {
+		margin-right: 23px;
+	}
+}

@@ -33,22 +33,34 @@
 
 	.page-footer__wrapper {
 		flex-direction: row;
+		justify-content: space-between;
 		box-sizing: border-box;
 		min-height: 150px;
 		padding: 0 30px;
 	}
 
 	.page-footer__logo {
-		margin-right: 155px;
+		width: 165px;
 		margin-bottom: 0;
 	}
 
 	.page-footer__social {
-		margin-right: auto;
 		margin-bottom: 7px;
 	}
 
 	.page-footer__copyright {
 		margin-bottom: 7px;
+	}
+}
+
+
+@media (min-width: $tablet-width) {
+
+	.page-footer__wrapper {
+		padding: 5px $desktop-padding 0;
+	}
+
+	.page-footer__social {
+		margin-left: -14px;
 	}
 }

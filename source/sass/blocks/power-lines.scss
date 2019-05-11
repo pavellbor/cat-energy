@@ -193,3 +193,74 @@
 		line-height: 20px;
 	}
 }
+
+
+@media (min-width: $desktop-width) {
+
+	.power-lines {
+		margin-bottom: 70px;
+	}
+
+	.power-lines__wrapper {
+		display: flex;
+		justify-content: space-between;
+		box-sizing: border-box;
+		width: $desktop-width;
+		padding: 0 $desktop-padding;
+	}
+
+	.power-lines__box {
+		width: 570px;
+		min-height: 372px;
+		margin-bottom: 0;
+		padding: 75px 53px 61px;
+
+		&::before {
+			top: 41px;
+			left: 34px;
+			right: auto;
+
+			width: 134px;
+			height: 107px;
+		}
+
+		&--slim {
+
+			.power-lines__desc {
+				width: auto;
+			}
+
+			&::before {
+				background-image: 
+				url(../img/icon-cat.svg),
+				radial-gradient(circle, #68b738 49px, transparent 50px);
+				background-size: 70px 97px, 100%;
+			}
+		}
+
+
+
+		&--pro {
+
+			.power-lines__desc {
+				width: auto;
+			}
+
+			&::before {
+				background-image: 
+				url(../img/icon-tiger.svg),
+				radial-gradient(circle, #68b738 49px, transparent 50px);
+				background-size: 134px 56px, 100%;
+			}
+		}
+	}
+
+	.power-lines__subtitle {
+		margin-bottom: 75px;
+		padding-left: 160px;
+	}
+
+	.power-lines__desc {
+		margin-bottom: 30px;
+	}
+}

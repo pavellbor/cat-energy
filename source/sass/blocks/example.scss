@@ -170,3 +170,59 @@
 		}
 	}
 }
+
+
+@media (min-width: $desktop-width) {
+
+	.example {
+		position: relative;
+
+		background-image: linear-gradient(to bottom, #ffffff 200px, #f2f2f2 200px);
+		background-size: 100%;
+	}
+
+	.example__wrapper {
+		position: absolute;
+		top: 65px;
+		right: 0;
+		left: 0;
+		z-index: 3;
+
+		width: 435px;
+		margin: auto;
+		padding: 0px;
+
+		transform: translateX(-392px);
+	}
+
+	.example__title {
+		margin-bottom: 145px;
+	}
+
+	.example__desc {
+		margin-bottom: 70px;
+		padding-right: 0;
+	}
+
+	.example__stats {
+		margin-bottom: 60px;
+	}
+
+	.example__value {
+
+		span {
+			bottom: -11px;
+
+			background-color: #f2f2f2;
+		}
+	}
+
+	.example__costs {
+
+		span {
+			display: inline-block;
+			padding-top: 0;
+			padding-left: 60px;
+		}
+	}
+}

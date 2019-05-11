@@ -3,7 +3,9 @@
 	width: 100%;
 }
 
+
 @media (min-width: $tablet-width) {
+
 	.page-header {
 		margin-bottom: 60px;
 	}
@@ -17,5 +19,21 @@
 
 	.page-header__logo {
 		margin-right: 92px;
+	}
+}
+
+
+@media (min-width: $desktop-width) {
+
+	.page-header {
+		position: absolute;
+		top: 54px;
+
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	.page-header__wrapper {
+		padding: 0 $desktop-padding;
 	}
 }

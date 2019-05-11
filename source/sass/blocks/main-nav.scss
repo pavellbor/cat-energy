@@ -92,5 +92,42 @@
 		&--active {
 			border-bottom: 3px solid #68b738;
 		}
+
+		&:hover {
+			opacity: 0.6;
+		}
+
+		&:active {
+			opacity: 0.3;
+		}
+	}
+}
+
+
+@media (min-width: $desktop-width) {
+
+	.main-nav {
+		top: 2px;
+		left: 3px;
+	}
+
+	.main-nav__link {
+		min-height: 45px;
+
+		font-size: 20px;
+		line-height: 20px;
+		color: #ffffff;
+
+		&--active {
+			border-bottom: 2px solid #ffffff;
+		}
+
+		&:hover {
+			opacity: 0.6;
+		}
+
+		&:active {
+			opacity: 0.3;
+		}
 	}
 }

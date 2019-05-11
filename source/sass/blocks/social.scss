@@ -3,7 +3,7 @@
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
-	width: 100%;
+	min-width: 100%;
 	min-height: 64px;
 	padding: 0 82px 0 73px;
 	margin: 0;
@@ -62,7 +62,7 @@
 @media (min-width: $tablet-width) {
 
 	.social {
-		width: auto;
+		min-width: 165px;
 		min-height: auto;
 		padding: 0;
 

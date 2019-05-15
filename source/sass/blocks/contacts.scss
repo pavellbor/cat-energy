@@ -27,6 +27,10 @@
 	background-color: $bg-1;
 }
 
+.inner-page .contacts__box {
+	background-color: #f2f2f2;
+}
+
 .contacts__slogan {
 	width: 140px;
 
@@ -119,6 +123,10 @@
 		width: 570px;
 		min-height: 201px;
 		padding: 65px 90px 60px 75px;
+	}
+
+	.inner-page .contacts__box {
+		background-color: $bg-1;
 	}
 
 	.contacts__slogan {

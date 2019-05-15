@@ -46,6 +46,7 @@
 
 	.page-footer__social {
 		margin-bottom: 7px;
+		margin-left: -20px;
 	}
 
 	.page-footer__copyright {
@@ -54,7 +55,7 @@
 }
 
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
 
 	.page-footer__wrapper {
 		padding: 5px $desktop-padding 0;

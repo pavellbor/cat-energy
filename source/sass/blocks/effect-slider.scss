@@ -266,6 +266,8 @@
 	}
 
 	.effect-slider__button {
+		left: 50%;
+
 		width: 32px;
 		height: 32px;
 
@@ -274,13 +276,17 @@
 		border-radius: 50%;
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 
-		transform: translateX(0);
+		transform: translateX(-50%);
 
 		&--before {
+			left: 0;
+
 			transform: translateX(0);
 		}
 
 		&--after {
+			left: 100%;
+
 			transform: translateX(-32px);
 		}
 	}

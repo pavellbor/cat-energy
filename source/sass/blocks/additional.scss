@@ -1,0 +1,149 @@
+.additional__list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.additional__item {
+	margin-bottom: 12px;
+
+	font-size: 16px;
+	line-height: 18px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.additional__item input {
+	position: absolute;
+
+	display: block;
+	width: 1px;
+	height: 1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+
+	&:focus + label::before {
+		border-color: #bababa;
+	}
+}
+
+.additional__item label {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+
+	&::before {
+		content: "";
+
+		box-sizing: border-box;
+		width: 30px;
+		height: 30px;
+		margin-right: 16px;
+
+		background-color: #ffffff;
+		border: 1px solid #cfcfcf;
+	}
+
+	&::after {
+		content: none;
+
+		position: absolute;
+		left: 5px;
+		bottom: 4px;
+
+		box-sizing: border-box;
+		width: 20px;
+		height: 11px;
+
+		border-bottom: 2px solid #68b738;
+		border-left: 2px solid #68b738;
+
+		transform: rotate(-50deg) skewX(-5deg);
+		transform-origin: 0 0;
+	}
+
+	&:hover::before {
+		border-color: #bababa;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+}
+
+.additional__item input:checked + label::after {
+	content: "";
+}
+
+
+@media (min-width: $tablet-width) {
+
+	.additional__subtitle {
+		margin-bottom: 56px;
+	}
+
+	.additional__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: -20px;
+	}
+
+	.additional__item {
+		width: 284px;
+		margin-right: 58px;
+		margin-bottom: 32px;
+
+		font-size: 20px;
+		line-height: 20px;
+
+		&:nth-child(even) {
+			margin-right: 0;
+		}
+
+		&:nth-last-child(2) {
+			margin-bottom: 0;
+		}
+	}
+
+	.additional__item label {
+		&::before {
+
+			width: 40px;
+			height: 40px;
+			margin-right: 19px;
+		}
+
+		&::after {
+			left: 10px;
+			bottom: 8px;
+		}
+	}
+}
+
+
+@media (min-width: $desktop-width) {
+
+	.additional__item {
+		width: 245px;
+		margin-right: 80px;
+		margin-bottom: 0;
+
+		&:nth-child(even) {
+			margin-right: auto;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
